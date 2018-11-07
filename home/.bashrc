@@ -131,3 +131,13 @@ alias gca="git commit -a"
 alias gcm="git commit -m"
 alias gpush="git push"
 alias gpull="git pull"
+
+#Anaconda
+source $HOME/anaconda3/etc/profile.d/conda.sh
+
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"

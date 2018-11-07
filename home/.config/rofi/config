@@ -1,4 +1,4 @@
-rofi.combi-modi:    window,drun,ssh
-rofi.theme:         solarized
+rofi.combi-modi:    window,drun,run,ssh
+rofi.theme:         glue_pro_blue
 rofi.font:          hack 10
-rofi.modi:          combi
+rofi.modi:          combi,window,windowcd,run,ssh
