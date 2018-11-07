@@ -20,7 +20,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id rofi -show combi -modi combi
-bindsym Control+F2 exec --no-startup-id rofi -show combi -modi combi
+bindsym Control+2 exec --no-startup-id rofi -show combi -modi combi
 
 # change focus
 bindsym $mod+j focus left
