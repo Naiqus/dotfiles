@@ -1,4 +1,4 @@
-set $mod Mod1
+set $mod Mod4
 
 new_window pixel 1
 new_float normal
@@ -19,7 +19,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show combi -modi combi
+bindsym Control+F2 exec --no-startup-id rofi -show combi -modi combi
 
 # change focus
 bindsym $mod+j focus left
