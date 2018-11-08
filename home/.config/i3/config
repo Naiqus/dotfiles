@@ -9,7 +9,7 @@ bindsym $mod+u border none
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
-font xft:URWGothic-Book 11
+font xft:Hiragino Sans GB 11
 
 floating_modifier $mod
 
@@ -213,11 +213,21 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+#exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+exec mintupdate-launcher
+exec blueberry-tray
+
+exec_always --no-startup-id gnome-sesseion
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
 exec_always --no-startup-id sh $HOME/setMonitor.sh
 exec_always --no-startup-id setxkbmap -option caps:super
+exec_always --no-startup-id gnome-flashback
+exec_always --no-startup-id gnome-power-manager
+
 
 # Theme colors
 client.focused #c5c8c6 #1d1f21 #c5c8c6 #81a2be #81a2be
