@@ -17,10 +17,11 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # Window kill command
 bindsym $mod+Shift+q kill
+bindsym $mod+Shift+w exec xkill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id rofi -show combi -modi combi
-bindsym Control+2 exec --no-startup-id rofi -show combi -modi combi
+#bindsym Control+2 exec --no-startup-id rofi -show combi -modi combi
 
 # change focus
 bindsym $mod+j focus left
@@ -183,6 +184,11 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -218,12 +224,12 @@ exec --no-startup-id clipit
 
 #exec mintupdate-launcher exec blueberry-tray
 
-exec_always --no-startup-id gnome-sesseion &
+exec_always --no-startup-id gnome-session &
 exec_always --no-startup-id gnome-flashback
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
-exec_always --no-startup-id /$HOME/setMonitor.sh
+exec_always --no-startup-id source $HOME/setMonitor.sh
 exec_always --no-startup-id sleep 3 && setxkbmap -option caps:super
 
 
