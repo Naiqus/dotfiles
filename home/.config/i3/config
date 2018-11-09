@@ -232,6 +232,7 @@ exec --no-startup-id gnome-flashback
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
+exec_always --no-startup-id source $HOME/.homesick/repos/homeshick/homeshick.sh
 exec_always --no-startup-id /$HOME/setMonitor.sh
 exec_always --no-startup-id sleep 2 && setxkbmap -option caps:super
 
