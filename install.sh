@@ -49,6 +49,15 @@ git clone https://github.com/csxr/i3-gnome.git
 cd i3-gnome
 sudo make install
 
+# install lolclock
+cd $HOME
+mkdir Programs && cd Programs
+wget https://raw.githubusercontent.com/naiqus/lolclock/master/lolclock
+sudo chmod +x lolclock
+echo "export PATH="$HOME/Programs:$PATH"" > $HOME/.bashrc
+cd $HOME
+
+
 # install Oh My Bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
