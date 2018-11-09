@@ -222,18 +222,18 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+exec --no-startup-id gnome-session &
+exec --no-startup-id gnome-flashback
 #exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 #exec mintupdate-launcher exec blueberry-tray
 
-exec_always --no-startup-id gnome-session &
-exec_always --no-startup-id gnome-flashback
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
 exec_always --no-startup-id /$HOME/setMonitor.sh
-exec_always --no-startup-id sleep 3 && setxkbmap -option caps:super
+exec_always --no-startup-id sleep 2 && setxkbmap -option caps:super
 
 
 # Theme colors
