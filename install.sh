@@ -13,8 +13,8 @@ echo Installing init packages
 sudo apt-get install --force-yes gcc g++ cmake vim tmux git curl i3 i3status rofi gnome-session gnome-flashback i3lock 
 
 # install Oh My Bash
-git clone git://github.com/ohmybash/oh-my-bash.git
-cp .bashrc .bashrc.orig
+git clone --depth=1 https://github.com/ohmybash/oh-my-bash.git $HOME/.oh-my-bash
+cp $HOME/.bashrc $HOME/.bashrc.orig
 
 mkdir Programs
 cd Programs
