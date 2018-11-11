@@ -29,8 +29,8 @@ echo Installing Homesick
 sudo apt install homesick
 
 # Install fonts
-wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/.fonts/Hiragino_W3.otf
-wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/.fonts/Hiragino_W6.otf
+wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/home/.fonts/Hiragino_W3.otf
+wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/home/.fonts/Hiragino_W6.otf
 mv ./Hiragino_W* $Home/.local/share/fonts
 
 # install i3wm-theme
