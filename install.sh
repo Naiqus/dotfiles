@@ -16,7 +16,7 @@ sudo apt-get install --force-yes gcc g++ cmake vim tmux git curl python i3 i3sta
 git clone --depth=1 https://github.com/ohmybash/oh-my-bash.git $HOME/.oh-my-bash
 cp $HOME/.bashrc $HOME/.bashrc.orig
 
-mkdir Programs
+mkdir -p Programs
 cd Programs
 
 # install pip
@@ -31,6 +31,7 @@ sudo apt install homesick
 # Install fonts
 wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/home/.fonts/Hiragino_W3.otf
 wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/home/.fonts/Hiragino_W6.otf
+mkdir -p $Home/.local/share/fonts
 mv ./Hiragino_W* $Home/.local/share/fonts
 
 # install i3wm-theme
