@@ -39,6 +39,9 @@ sudo pip install -r requirements.txt
 ./change 000
 cd $HOME
 
+# Install Numix theme
+sudo apt install numix-gtk-theme numix-icon-theme
+
 # install i3-gnome 
 echo Installing i3-gnome
 cd $HOME/Programs
