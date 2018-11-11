@@ -8,16 +8,16 @@ sudo apt update --force-yes
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
-mkdir Programs
-cd Programs
-
 # init packages
 echo Installing init packages
 sudo apt-get install --force-yes gcc g++ cmake vim tmux git curl i3 i3status rofi gnome-session gnome-flashback i3lock 
 
 # install Oh My Bash
-git clone git://github.com/ohmybash/oh-my-bash.git $Home/.oh-my-bash
-cp $Home/.bashrc $Home/.bashrc.orig
+git clone git://github.com/ohmybash/oh-my-bash.git
+cp .bashrc .bashrc.orig
+
+mkdir Programs
+cd Programs
 
 # install pip
 echo Installing pip
