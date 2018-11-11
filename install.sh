@@ -10,7 +10,7 @@ sudo apt-get -y dist-upgrade
 
 # init packages
 echo Installing init packages
-sudo apt-get install --force-yes gcc g++ cmake vim tmux git curl i3 i3status rofi gnome-session gnome-flashback i3lock 
+sudo apt-get install --force-yes gcc g++ cmake vim tmux git curl python i3 i3status rofi gnome-session gnome-flashback i3lock 
 
 # install Oh My Bash
 git clone --depth=1 https://github.com/ohmybash/oh-my-bash.git $HOME/.oh-my-bash
