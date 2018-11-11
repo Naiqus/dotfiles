@@ -31,8 +31,8 @@ sudo apt install homesick
 # Install fonts
 wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/home/.fonts/Hiragino_W3.otf
 wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/home/.fonts/Hiragino_W6.otf
-mkdir -p $Home/.local/share/fonts
-mv ./Hiragino_W* $Home/.local/share/fonts
+mkdir -p $HOME/.local/share/fonts
+mv ./Hiragino_W* $HOME/.local/share/fonts
 
 # install i3wm-theme
 echo Installing i3wm-theme
