@@ -15,6 +15,7 @@ sudo apt-get install --force-yes gcc g++ cmake vim tmux git curl i3 i3status rof
 
 # install Oh My Bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+exit 1
 
 # install pip
 echo Installing pip
