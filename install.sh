@@ -40,7 +40,7 @@ git clone https://github.com/unix121/i3wm-themer
 cd i3wm-themer/
 sudo pip install -r requirements.txt
 ./install_ubuntu.sh
-./change 000
+./change.sh 000
 cd $HOME
 
 # Install Numix theme
