@@ -224,6 +224,8 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id gnome-session &
 exec --no-startup-id gnome-flashback
+exec --no-startup-id ibus
+exec --no-startup-id compton
 #exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 

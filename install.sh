@@ -10,8 +10,8 @@ sudo apt-get -y dist-upgrade
 
 # init packages
 echo Installing init packages
-sudo apt-get install --force-yes gcc g++ cmake vim tmux git curl python i3 i3status rofi gnome-session gnome-flashback i3lock 
-
+sudo apt-get install --force-yes gcc g++ cmake vim tmux git curl python i3 i3status rofi gnome-session gnome-flashback i3lock compton
+sudo apt install ibus ibus-rime
 # install Oh My Bash
 git clone --depth=1 https://github.com/ohmybash/oh-my-bash.git $HOME/.oh-my-bash
 cp $HOME/.bashrc $HOME/.bashrc.orig
@@ -54,6 +54,7 @@ cd i3-gnome
 sudo make install
 
 # install lolclock
+sudo apt install lolcat toilet
 cd $HOME/Programs
 wget https://raw.githubusercontent.com/naiqus/lolclock/master/lolclock
 sudo chmod +x lolclock
