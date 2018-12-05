@@ -92,5 +92,4 @@ alias gcm="git commit -m"
 alias gpush="git push"
 alias gpull="git pull"
 
-export PATH="$HOME/Programs:$PATH"
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
