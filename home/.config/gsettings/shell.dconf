@@ -1,0 +1,58 @@
+[/]
+command-history=['terminal', 'gnome-terminal']
+enabled-extensions=['putWindow@clemens.lab21.org', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'no-title-bar@franglais125.gmail.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['google-chrome.desktop', 'code.desktop', 'org.gnome.Nautilus.desktop', 'gnome-control-center.desktop']
+
+[extensions/user-theme]
+name='Adapta-Nokto'
+
+[extensions/no-title-bar]
+ignore-list='Terminal'
+ignore-list-type='whitelist'
+
+[extensions/dash-to-panel]
+group-apps=true
+intellihide=false
+panel-size=24
+dot-style-focused='METRO'
+show-show-apps-button=false
+animate-app-switch=true
+show-activities-button=false
+appicon-margin=4
+tray-size=0
+appicon-padding=0
+isolate-workspaces=true
+
+[extensions/org-lab21-putwindow]
+move-focus-south-enabled=0
+move-focus-animation=0
+put-to-side-e-enabled=0
+put-to-corner-sw=@as []
+put-to-corner-ne=['<Shift><Super>h']
+move-focus-north-enabled=0
+put-to-corner-sw-enabled=0
+put-to-corner-nw-enabled=1
+put-to-side-n-enabled=0
+put-to-location-enabled=0
+put-to-location=@as []
+put-to-side-e=@as []
+put-to-left-screen=@as []
+move-focus-west-enabled=0
+put-to-right-screen=@as []
+move-focus-right-screen-enabled=0
+move-focus-east-enabled=0
+put-to-left-screen-enabled=0
+put-to-side-w-enabled=0
+put-to-side-s-enabled=0
+put-to-right-screen-enabled=0
+put-to-center=@as []
+put-to-corner-se-enabled=0
+move-focus-enabled=0
+put-to-side-s=@as []
+put-to-center-enabled=0
+move-focus-cycle-enabled=0
+put-to-side-w=@as []
+put-to-side-n=@as []
+put-to-corner-ne-enabled=1
+move-focus-left-screen-enabled=0
+put-to-corner-se=@as []

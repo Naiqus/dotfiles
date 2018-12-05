@@ -1,0 +1,24 @@
+[power]
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+
+[color]
+night-light-schedule-automatic=true
+night-light-enabled=false
+
+[media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[media-keys/custom-keybindings/custom1]
+binding='<Super>Return'
+command='gnome-terminal'
+name='terminal'
+
+[media-keys/custom-keybindings/custom0]
+binding='<Super>d'
+command='rofi -show combi'
+name='rofi'
+
+[xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <0>}
+hinting='slight'

@@ -32,16 +32,7 @@ enabled-extensions=['putWindow@clemens.lab21.org', 'workspace-indicator@gnome-sh
 favorite-apps=['google-chrome.desktop', 'code.desktop', 'org.gnome.Nautilus.desktop', 'gnome-control-center.desktop']
 
 [org/gnome/shell/extensions/user-theme]
-name='Arc-Dark'
-
-[org/gnome/shell/extensions/dash-to-dock]
-apply-custom-theme=false
-preferred-monitor=0
-custom-theme-shrink=true
-height-fraction=0.54000000000000004
-dock-position='BOTTOM'
-extend-height=false
-isolate-workspaces=true
+name='Adapta-Nokto'
 
 [org/gnome/shell/extensions/no-title-bar]
 ignore-list='Terminal'
@@ -150,19 +141,22 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-software', 'google-chrome', 'org-gnome-tweaks', 'gnome-control-center', 'gnome-shell-extension-prefs']
+application-children=['update-manager', 'org-gnome-software', 'google-chrome', 'org-gnome-tweaks', 'gnome-control-center', 'gnome-shell-extension-prefs', 'fcitx-config-gtk3']
 
 [org/gnome/desktop/notifications/application/google-chrome]
 application-id='google-chrome.desktop'
 
+[org/gnome/desktop/notifications/application/fcitx-config-gtk3]
+application-id='fcitx-config-gtk3.desktop'
+
 [org/gnome/desktop/notifications/application/gnome-shell-extension-prefs]
 application-id='gnome-shell-extension-prefs.desktop'
 
-[org/gnome/desktop/notifications/application/update-manager]
-application-id='update-manager.desktop'
-
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/notifications/application/update-manager]
+application-id='update-manager.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-control-center]
 application-id='gnome-control-center.desktop'
@@ -170,11 +164,15 @@ application-id='gnome-control-center.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
+[org/gnome/desktop/peripherals/touchscreens/1fd2:5004]
+display=['LGD', '0x04e7', '0x00000000']
+
 [org/gnome/desktop/background]
 show-desktop-icons=false
 
 [org/gnome/desktop/input-sources]
-sources=[('xkb', 'us')]
+sources=[('xkb', 'us'), ('xkb', 'cn'), ('xkb', 'de')]
+mru-sources=[('xkb', 'cn'), ('xkb', 'us'), ('xkb', 'de')]
 xkb-options=['caps:super']
 
 [org/gnome/desktop/wm/preferences]
@@ -212,11 +210,11 @@ font-name='Ubuntu Light 10'
 document-font-name='Hiragino Sans GB Light 11'
 gtk-im-module='gtk-im-context-simple'
 show-battery-percentage=false
-icon-theme='Numix'
-gtk-theme='Arc-Dark'
+icon-theme='Oranchelo-Beka'
+gtk-theme='Adapta-Nokto'
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='region'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 foreground-color='rgb(131,148,150)'
@@ -234,7 +232,7 @@ theme-variant='system'
 default-show-menubar=false
 
 [org/gnome/software]
-check-timestamp=int64 1543955787
+check-timestamp=int64 1544009121
 
 [org/gnome/mutter]
 dynamic-workspaces=false
@@ -258,6 +256,7 @@ selected-color=(true, 0.1803921568627451, 0.20392156862745098, 0.211764705882352
 [apps/update-manager]
 first-run=false
 launch-time=int64 1543955788
+launch-count=1
 
 [com/ubuntu/update-notifier]
 release-check-time=uint32 1543955785
