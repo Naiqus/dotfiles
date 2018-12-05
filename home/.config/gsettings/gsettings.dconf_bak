@@ -20,7 +20,7 @@ command='rofi -show combi'
 name='rofi'
 
 [org/gnome/settings-daemon/plugins/xsettings]
-overrides={'Gtk/ShellShowsAppMenu': <0>}
+overrides={'Gtk/ShellShowsAppMenu': <1>}
 hinting='slight'
 
 [org/gnome/settings-daemon/peripherals/keyboard]
@@ -28,11 +28,8 @@ numlock-state='off'
 
 [org/gnome/shell]
 command-history=['terminal', 'gnome-terminal']
-enabled-extensions=['putWindow@clemens.lab21.org', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'no-title-bar@franglais125.gmail.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com']
 favorite-apps=['google-chrome.desktop', 'code.desktop', 'org.gnome.Nautilus.desktop', 'gnome-control-center.desktop']
-
-[org/gnome/shell/extensions/user-theme]
-name='Arc-Dark'
 
 [org/gnome/shell/extensions/dash-to-dock]
 apply-custom-theme=false
@@ -42,57 +39,6 @@ height-fraction=0.54000000000000004
 dock-position='BOTTOM'
 extend-height=false
 isolate-workspaces=true
-
-[org/gnome/shell/extensions/no-title-bar]
-ignore-list='Terminal'
-ignore-list-type='whitelist'
-
-[org/gnome/shell/extensions/dash-to-panel]
-group-apps=true
-intellihide=false
-panel-size=24
-dot-style-focused='METRO'
-show-show-apps-button=false
-animate-app-switch=true
-show-activities-button=false
-appicon-margin=4
-tray-size=0
-appicon-padding=0
-isolate-workspaces=true
-
-[org/gnome/shell/extensions/org-lab21-putwindow]
-move-focus-south-enabled=0
-move-focus-animation=0
-put-to-side-e-enabled=0
-put-to-corner-sw=@as []
-put-to-corner-ne=['<Shift><Super>h']
-move-focus-north-enabled=0
-put-to-corner-sw-enabled=0
-put-to-corner-nw-enabled=1
-put-to-side-n-enabled=0
-put-to-location-enabled=0
-put-to-location=@as []
-put-to-side-e=@as []
-put-to-left-screen=@as []
-move-focus-west-enabled=0
-put-to-right-screen=@as []
-move-focus-right-screen-enabled=0
-move-focus-east-enabled=0
-put-to-left-screen-enabled=0
-put-to-side-w-enabled=0
-put-to-side-s-enabled=0
-put-to-right-screen-enabled=0
-put-to-center=@as []
-put-to-corner-se-enabled=0
-move-focus-enabled=0
-put-to-side-s=@as []
-put-to-center-enabled=0
-move-focus-cycle-enabled=0
-put-to-side-w=@as []
-put-to-side-n=@as []
-put-to-corner-ne-enabled=1
-move-focus-left-screen-enabled=0
-put-to-corner-se=@as []
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -150,19 +96,16 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-software', 'google-chrome', 'org-gnome-tweaks', 'gnome-control-center', 'gnome-shell-extension-prefs']
+application-children=['update-manager', 'org-gnome-software', 'google-chrome', 'org-gnome-tweaks', 'gnome-control-center']
 
 [org/gnome/desktop/notifications/application/google-chrome]
 application-id='google-chrome.desktop'
 
-[org/gnome/desktop/notifications/application/gnome-shell-extension-prefs]
-application-id='gnome-shell-extension-prefs.desktop'
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
 
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-tweaks]
-application-id='org.gnome.tweaks.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-control-center]
 application-id='gnome-control-center.desktop'
@@ -193,7 +136,6 @@ move-to-workspace-6=['<Shift><Super>6']
 move-to-workspace-7=['<Shift><Super>7']
 move-to-workspace-8=['<Shift><Super>8']
 move-to-workspace-9=['<Shift><Super>9']
-show-desktop=@as []
 switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
@@ -204,6 +146,7 @@ switch-to-workspace-7=['<Super>7']
 switch-to-workspace-8=['<Super>8']
 switch-to-workspace-9=['<Super>9']
 toggle-fullscreen=['<Super>f']
+show-desktop=@as []
 minimize=@as []
 
 [org/gnome/desktop/interface]
@@ -219,19 +162,11 @@ gtk-theme='Arc-Dark'
 last-panel='keyboard'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-foreground-color='rgb(131,148,150)'
-palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
-use-transparent-background=true
-use-theme-colors=true
-use-theme-transparency=false
-background-color='rgb(0,43,54)'
-background-transparency-percent=8
-scrollbar-policy='never'
+use-theme-colors=false
 
 [org/gnome/terminal/legacy]
 schema-version=uint32 3
 theme-variant='system'
-default-show-menubar=false
 
 [org/gnome/software]
 check-timestamp=int64 1543955787
@@ -239,18 +174,6 @@ check-timestamp=int64 1543955787
 [org/gnome/mutter]
 dynamic-workspaces=false
 workspaces-only-on-primary=false
-
-[org/gtk/settings/file-chooser]
-sort-column='name'
-sidebar-width=150
-window-position=(2212, 73)
-show-size-column=true
-show-hidden=false
-window-size=(1096, 822)
-sort-directories-first=true
-date-format='regular'
-sort-order='ascending'
-location-mode='path-bar'
 
 [org/gtk/settings/color-chooser]
 selected-color=(true, 0.1803921568627451, 0.20392156862745098, 0.21176470588235294, 1.0)
