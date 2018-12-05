@@ -21,4 +21,5 @@ name='rofi'
 
 [xsettings]
 overrides={'Gtk/ShellShowsAppMenu': <0>}
+antialiasing='grayscale'
 hinting='slight'

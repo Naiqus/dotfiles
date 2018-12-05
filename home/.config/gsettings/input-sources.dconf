@@ -1,0 +1,4 @@
+[/]
+current=uint32 0
+sources=[('ibus', 'rime'), ('xkb', 'us')]
+xkb-options=['caps:super']
