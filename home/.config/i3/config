@@ -154,6 +154,7 @@ for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [title="KeePass2"] floating enable sticky enable border normal
 
 for_window [title="lolclock"] floating enable
 
@@ -187,9 +188,9 @@ mode "$mode_system" {
 }
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
 
 
 # Resize window (you can also use the mouse for that)
@@ -224,7 +225,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id gnome-session &
 exec --no-startup-id gnome-flashback
-exec --no-startup-id ibus
+exec --no-startup-id fcitx
 exec --no-startup-id compton
 #exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
@@ -236,17 +237,17 @@ exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
 exec_always --no-startup-id source $HOME/.homesick/repos/homeshick/homeshick.sh
 exec_always --no-startup-id /$HOME/setMonitor.sh
-exec_always --no-startup-id sleep 2 && setxkbmap -option caps:super
+exec_always --no-startup-id setxkbmap -option caps:super
 
 
 # Theme colors
-client.focused #c5c8c6 #1d1f21 #c5c8c6 #81a2be #81a2be
-client.focused_inactive #c5c8c6 #1d1f21 #c5c8c6 #5f819d #5f819d
-client.unfocused #c5c8c6 #1d1f21 #c5c8c6 #5f819d #5f819d
-client.urgent #c5c8c6 #1d1f21 #c5c8c6 #5f819d #5f819d
-client.placeholder #c5c8c6 #1d1f21 #c5c8c6 #5f819d #5f819d
+client.focused #56737a #1e1e20 #56737a #56737a #56737a
+client.focused_inactive #56737a #1e1e20 #56737a #2c5159 #2c5159
+client.unfocused #56737a #1e1e20 #56737a #2c5159 #2c5159
+client.urgent #56737a #1e1e20 #56737a #2c5159 #2c5159
+client.placeholder #56737a #1e1e20 #56737a #2c5159 #2c5159
 
-client.background #1d1f21
+client.background #1e1e20
 
 # Gaps
 gaps inner 10
