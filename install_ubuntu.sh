@@ -86,8 +86,11 @@ wget https://raw.githubusercontent.com/naiqus/dotfiles/fonts/home/.fonts/Hiragin
 sudo mkdir -p $HOME/.local/share/fonts
 sudo mv ./Hiragino_W* $HOME/.local/share/fonts
 
-# Install Numix theme
-sudo apt install arc-theme numix-icon-theme
+# Install themes
+sudo add-apt-repository -y ppa:tista/adapta
+sudo add-apt-repository -y ppa:oranchelo/oranchelo-icon-theme
+sudo apt-get update
+sudo apt install adapta-gtk-theme arc-theme numix-icon-theme oranchelo-icon-theme
 
 # install lolclock
 sudo apt install lolcat toilet
