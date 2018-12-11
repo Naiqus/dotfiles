@@ -106,6 +106,6 @@ homesick link dotfiles
 DOTFILES_PATH=$HOME/.homesick/repos/dotfiles
 
 # restore gnome settings 
-dconf load / < $HOME/.config/gsettings/gsettings.dconf
+sh $DOTFILES_PATH/home/.config/gsettings/restoregsettings.sh
 ln -s $DOTFILES_PATH/home/.config/gsettings/restoregsettings.sh $BIN_PATH/restoregsettings  
 ln -s $DOTFILES_PATH/home/.config/gsettings/exportgsettings.sh $BIN_PATH/exportgsettings  

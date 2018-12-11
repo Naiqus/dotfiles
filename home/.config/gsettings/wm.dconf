@@ -1,5 +1,4 @@
 [preferences]
-button-layout=':appmenu,minimize,maximize,close'
 num-workspaces=9
 titlebar-font='Ubuntu 11'
 

@@ -2,7 +2,7 @@
 clock-show-date=true
 font-name='Ubuntu Light 10'
 document-font-name='Hiragino Sans GB Light 11'
-gtk-im-module='gtk-im-context-simple'
+gtk-im-module='ibus'
 show-battery-percentage=false
 icon-theme='Oranchelo-Beka'
 gtk-theme='Adapta-Nokto'
